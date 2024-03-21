@@ -58,5 +58,12 @@ scripts{
     "start":"node index"
 }
 ================================
-
+code modules:
+//It is predefined modules available inside the nodejs 
+example:
+1.os 
+2.fs/promises
+third party modules:
+//axios is third party.
+=======================================
 
