@@ -1,0 +1,36 @@
+MERN - 
+MongoDB Expressjs Reactjs Nodejs 
+Frontend:
+Reactjs 
+Backend: 
+Mongodb - Database
+Expressjs 
+Nodejs 
+========================
+Nodejs:
+//It is run time environment for javascript.
+//Running javascript outside browser.
+//it is serverside language.
+Serverside language
+//we can interact with file system 
+//we can interact with operating system 
+//we can interact with database system 
+//we can interact with networking system 
+=========================================
+Nodejs single thread 
+Nodejs - (entire restarurent)
+single thread - (waiter)
+frontend request - (customer)
+database - (kitchen)
+internal thread pool-(part time waiter)
+Benefits:
+//resource utilization.
+//performance.
+java multi thread 
+multi thread (multiple waiter)
+===================================
+To run node in your local system 
+filename: hello.js 
+cmd:node hello
+
+
