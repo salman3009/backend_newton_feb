@@ -48,7 +48,15 @@ cmd:npm install package_name
 publishing own package 
 cmd:npm publish 
 ================================
-
-
+Steps for creating npm with files:
+1.npm init 
+2.create file name index.js 
+index.js 
+console.log("hello world nodejs");
+3.package.json 
+scripts{
+    "start":"node index"
+}
+================================
 
 
