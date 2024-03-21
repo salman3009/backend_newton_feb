@@ -4,7 +4,7 @@ Frontend:
 Reactjs 
 Backend: 
 Mongodb - Database
-Expressjs 
+Expressjs - it is framework for nodejs
 Nodejs 
 ========================
 Nodejs:
@@ -36,5 +36,19 @@ cmd:node hello
 Modules:
 //Break down their code into smaller manageable pieces.
 ===============================================
+npm:node package manager
+It is command line interface that to to install and manage open source packages.
+
+Creating plain package.json 
+cmd:npm init 
+
+Installing any package 
+cmd:npm install package_name 
+
+publishing own package 
+cmd:npm publish 
+================================
+
+
 
 
