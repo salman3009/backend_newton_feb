@@ -9,3 +9,19 @@ package name: "fs/promises"
 Syntax:
 const global = require('fs/promises');
 global.writeFile("fileName","any content");
+
+2.Reading file:
+Syntax:
+const global = require('fs/promises');
+global.readFile("fileName").toString();
+
+3.deleting file 
+Syntax:
+const global = require('fs/promises');
+global.unlink("fileName");
+
+4.updating file 
+syntax:
+const global = require('fs/promises');
+global.appendFile("fileName","content);
+
