@@ -66,4 +66,7 @@ example:
 third party modules:
 //axios is third party.
 =======================================
+What is promise 
+what is async/await 
+==================================
 

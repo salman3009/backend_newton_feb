@@ -1,0 +1,11 @@
+files
+//creating file 
+//reading file 
+//updating file 
+we are using predefined module name: fs/promises 
+package name: "fs/promises" 
+//asynchronous operation.
+1.Creating file:
+Syntax:
+const global = require('fs/promises');
+global.writeFile("fileName","any content");
