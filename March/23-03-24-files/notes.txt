@@ -26,4 +26,24 @@ const global = require('fs/promises');
 global.appendFile("fileName","content);
 //If existing file is not available it will create new file.
 
+=======================================================
+Events Module:
+package name:events 
+//user defined event modules 
+//It is use to create and handle custom events 
+//Event Emitter class can be used to create and handle custom events 
+syntax:
+const Events = require('events');
+
+const eventHandler = new Events();
+
+//listener
+eventHandler.on('click',()=>{
+    console.log("events trigger");
+})
+
+//trigger event
+eventHandler.emit('click');
+=====================================================
+
 
