@@ -29,13 +29,13 @@ global.appendFile("fileName","content);
 =======================================================
 Events Module:
 package name:events 
-//user defined event modules 
-//It is use to create and handle custom events 
+//user defined events. Like similar to onclick,onchange in frontend. 
+//It is use to create and handle custom events. 
 //Event Emitter class can be used to create and handle custom events 
 syntax:
-const Events = require('events');
+const Emitter = require('events');
 
-const eventHandler = new Events();
+const eventHandler = new Emitter();
 
 //listener
 eventHandler.on('click',()=>{
