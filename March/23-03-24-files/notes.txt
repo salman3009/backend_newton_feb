@@ -24,4 +24,6 @@ global.unlink("fileName");
 syntax:
 const global = require('fs/promises');
 global.appendFile("fileName","content);
+//If existing file is not available it will create new file.
+
 
