@@ -15,7 +15,7 @@ const server = http.createServer((req,res)=>{
               const response = Buffer.from(input);
               const result = response.toString();
               const object = JSON.parse(result);
-              console.log(object.age);
+              console.log(object.age,object.name);
 
               if(object.age>=18){
                 res.writeHead(200,{'Content-Type':'text/plain'});
