@@ -45,5 +45,23 @@ eventHandler.on('click',()=>{
 //trigger event
 eventHandler.emit('click');
 =====================================================
+http module:
+package name: http 
+methods name:GET,POST 
+GET - It will bring data 
+POST - it will receive data 
+local domain name:http://localhost:8080
+//we are creating web server to listen get method or post method 
+//http can send html file,css file,txt file, json data 
+
+header http method
+status code:(200 or 300 or 400 or 500)it will tell frontend success or failure of the request 
+content type:'text/json','text/plain','text/html'
+==========================================================
+
+
+
+
+
 
 

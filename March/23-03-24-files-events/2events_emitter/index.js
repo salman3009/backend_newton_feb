@@ -12,6 +12,7 @@ eventHandler.on('message',(input)=>{
 })
 
 //trigger event
+//call event name(user defined)
 eventHandler.emit('call');
 eventHandler.emit('call');
 
