@@ -39,3 +39,33 @@ cmd:npm install
 cmd:npm start
 url:http://localhost:3000
 =====================================
+Three types of module 
+1.user defined module 
+2.pre-defined module 
+example:
+      (i)os
+      (ii)http 
+      (iii)events
+      (iv)fs/promises 
+3.third party module 
+example: 
+    (i)axios 
+=================================
+Setup for third party module:
+1.npm init 
+2.create index.js 
+3.package.json -> start:"node index" 
+4.npm i axios 
+5.example:
+const global = require('axios');
+
+function initial(){
+   global.get('https://jsonplaceholder.typicode.com/users').then((result)=>{
+      console.log(result.data)
+   }).catch((error)=>{
+       console.log(error);
+   })
+}
+
+initial();
+========================================
