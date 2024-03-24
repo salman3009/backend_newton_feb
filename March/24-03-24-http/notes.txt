@@ -29,4 +29,8 @@ const server = http.createServer((req,res)=>{
 
 //port number 8080
 server.listen(8080);
+
+postman:
+method:GET
+url:http://localhost:8080
 ============================================

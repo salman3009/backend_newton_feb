@@ -8,7 +8,7 @@ const server = http.createServer((req,res)=>{
      //header
      res.writeHead(202,{'Content-Type':'text/plain'});
 
-     //body 
+     //body //actual response
      res.end("welcome to newton school get method");
 });
 
