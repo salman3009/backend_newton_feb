@@ -34,3 +34,6 @@ postman:
 method:GET
 url:http://localhost:8080
 ============================================
+Running assignment:
+cmd:npm install 
+cmd:npm start
