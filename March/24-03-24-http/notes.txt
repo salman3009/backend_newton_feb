@@ -10,3 +10,23 @@ local domain name:http://localhost:8080
 header http method
 status code:(200 or 300 or 400 or 500)it will tell frontend success or failure of the request 
 content type:'text/json','text/plain','text/html'
+
+syntax:
+
+const http = require('http');
+
+const server = http.createServer((req,res)=>{
+     //req and res is an object
+     //req - incoming data from frontend particular in post method 
+     //res - sending data from backend
+
+     //header
+     res.writeHead(202,{'Content-Type':'text/plain'});
+
+     //body 
+     res.end("welcome to newton school get method");
+});
+
+//port number 8080
+server.listen(8080);
+============================================
