@@ -6,7 +6,11 @@ app.get('',(req,res)=>{
 })
 
 app.get('/person',(req,res)=>{
-    res.send("<p>Welcome to person routing</p>");
+    res.send("Welcome to person routing");
+})
+
+app.get('/about',(req,res)=>{
+     res.send("welcome to about");
 })
 
 app.listen(8080,()=>{
