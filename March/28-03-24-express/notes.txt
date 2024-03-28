@@ -34,3 +34,9 @@ app.listen(8080,()=>{
 Running the application:
 http://localhost:8080/
 ====================================
+Creating separte route 
+example:
+app.get('/person',(req,res)=>{
+    res.send("<p>Welcome to person routing</p>");
+})
+===================================
