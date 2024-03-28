@@ -11,3 +11,26 @@ npm install express
 create two files index.js and app.js 
 package.json 
  "start":"node index"
+
+app.js 
+const express = require('express');
+const app = express();
+
+app.get('',(req,res)=>{
+    res.send("<h1>Hello world newton</h1>");
+})
+
+module.exports = app;
+
+index.js
+
+const app = require('./app');
+
+app.listen(8080,()=>{
+    console.log("server is listening on port 8080");
+})
+
+=======================================================
+Running the application:
+http://localhost:8080/
+====================================
