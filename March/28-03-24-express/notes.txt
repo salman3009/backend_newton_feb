@@ -40,3 +40,9 @@ app.get('/person',(req,res)=>{
     res.send("<p>Welcome to person routing</p>");
 })
 ===================================
+nodemon package 
+//This package is used to re-run the backend application whenever there is change any file.
+cmd:npm i nodemon 
+package.json 
+"start":nodemon index 
+====================================
