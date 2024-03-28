@@ -1,0 +1,46 @@
+How Nodejs Works:
+1.Event loop 
+//manages all the asynchronous operations 
+//new events in the event queue 
+
+2.Event Queue 
+//Hold various types of request timers,I/o events.
+
+3.callback 
+
+4.Single thread 
+//process in execution 
+
+5.thread pool 
+//blocking operation separate thread will be given from thread pool 
+
+6.CPU Bound operations(os,file system)
+//cpu bound operation are blocking operation 
+
+7.sync(blocking) and async(non-blocking) operations 
+===================================================
+Nodejs Event Driven Programming: 
+//A callback function is called when an event is triggered.
+//An event loop that listens for event triggers and calls the corresponding event handler for that events
+//these 'events' can be access via the 'events module.
+============================================
+API:Application Programming interface
+//It is set of commands, functions or protocols that act as intermediary that enables 
+two applications to communicate.
+
+
+REST:Representation State Transfer 
+//it means the transfer of the state via http 
+//format such as json,html,xml,plain text 
+//REST will work only on http protocol 
+//http methods, GET,POST PATCH 
+
+REST API
+=====================================
+How Nodejs working?
+//Nodejs is working on single thread 
+//Any incoming requests first will go inside the event queue 
+//Event loop will take one be one request from event queue 
+//Event loop will process non blocking operation and send back the result 
+//Event loop for blocking operation separate thread will be created from the thread pool
+===========================================
