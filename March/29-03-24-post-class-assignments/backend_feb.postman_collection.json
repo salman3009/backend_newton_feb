@@ -95,6 +95,60 @@
 				"url": "http://localhost:8080/add"
 			},
 			"response": []
+		},
+		{
+			"name": "POST_METHOD_SUB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/sub"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_MUL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/mul"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_DIV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/div"
+			},
+			"response": []
 		}
 	]
 }

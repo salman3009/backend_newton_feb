@@ -20,5 +20,34 @@ app.post('/add',(req,res)=>{
    res.send({result:result});
 })
 
+app.post('/sub',(req,res)=>{
+    const num1 = parseInt(req.body.num1);
+    const num2 = parseInt(req.body.num2);
+    const result = num1 - num2;
+    res.send({result:result});
+})
+
+
+app.post('/mul',(req,res)=>{
+    const num1 = parseInt(req.body.num1);
+    const num2 = parseInt(req.body.num2);
+    const result = num1 * num2;
+    res.send({result:result});
+})
+
+
+app.post('/div',(req,res)=>{
+    const num1 = parseInt(req.body.num1);
+    const num2 = parseInt(req.body.num2);
+    if(num2 == 0 ){
+       res.status(400).send("cannot divide by zero");
+    }
+    else{
+        const result = num1 / num2;
+        res.send({result:result});
+    }
+  
+})
+
 
 module.exports = app;
