@@ -5,9 +5,6 @@ app.get('',(req,res)=>{
     res.send("<h1>Hello world app</h1>");
 })
 
-app.get('/about',(req,res)=>{
-    res.send("Hello world app");
-})
 
 app.get('/profile',(req,res)=>{
     res.send({name:"akash",age:33});
