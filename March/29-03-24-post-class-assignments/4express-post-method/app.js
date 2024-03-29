@@ -13,6 +13,12 @@ app.post('',(req,res)=>{
     res.send("welcome to post method");
 })
 
+app.post('/add',(req,res)=>{
+   const num1 = parseInt(req.body.num1);
+   const num2 = parseInt(req.body.num2);
+   const result = num1 + num2;
+   res.send({result:result});
+})
 
 
 module.exports = app;

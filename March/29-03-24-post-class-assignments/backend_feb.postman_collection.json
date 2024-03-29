@@ -77,6 +77,24 @@
 				"url": "http://localhost:8080/profile"
 			},
 			"response": []
+		},
+		{
+			"name": "POST_METHOD_ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/add"
+			},
+			"response": []
 		}
 	]
 }
