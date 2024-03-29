@@ -8,7 +8,8 @@ app.use(express.json());
 
 app.post('',(req,res)=>{
     //req.body will help you to access data from frontend
-    console.log(req.body);
+    console.log(req.body.name);
+    console.log(req.body.age);
     res.send("welcome to post method");
 })
 
