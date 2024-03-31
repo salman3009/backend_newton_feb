@@ -16,7 +16,14 @@ app.use((req,res,next)=>{
 
 app.use((req,res,next)=>{
     console.log("second middleware");
-    next();
+    console.log(typeof req.body.num1);
+    if(typeof req.body.num1 == 'number' && typeof req.body.num2 == 'number'){
+        next();
+    }
+    else{
+        res.status(400).send({error:"Datatype should be number"});
+    }
+   
 })
 
 app.post('/add',(req,res)=>{
