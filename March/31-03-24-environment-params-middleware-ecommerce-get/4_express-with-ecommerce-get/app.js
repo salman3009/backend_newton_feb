@@ -8,8 +8,7 @@ console.log(product);
 
 
 app.get('',(req,res)=>{
-    console.log(process.env.TOKEN);
-    res.send("welcome to expressjs");
+    res.send({data:product});
 })
 
 module.exports = app;
