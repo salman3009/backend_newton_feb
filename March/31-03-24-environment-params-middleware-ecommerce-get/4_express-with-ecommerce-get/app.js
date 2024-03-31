@@ -7,7 +7,7 @@ const product = JSON.parse(fs.readFileSync('./data/products.json').toString());
 console.log(product);
 
 
-app.get('',(req,res)=>{
+app.get('/api/v1/products',(req,res)=>{
     res.send({data:product});
 })
 
