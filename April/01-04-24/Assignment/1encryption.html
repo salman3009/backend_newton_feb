@@ -1,0 +1,15 @@
+<script>
+    function initial(str) {
+        let encrypted="";
+        for (let i = 0; i < str.length; i++) {
+            let charCode = str.charCodeAt(i);
+            let encryptedCharCode = (charCode + 13) % 256;
+            encrypted += String.fromCharCode(encryptedCharCode);
+            
+        }
+        console.log(encrypted);
+    }
+    initial("newton");
+    console.log("newton".charCodeAt(0));
+    console.log(String.fromCharCode(110));
+</script>
