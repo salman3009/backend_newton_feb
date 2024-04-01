@@ -1,17 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
+  const [getProduct, setProduct] = useState([]);
   useEffect(() => {
     initialAPI();
   }, [])
 
   const initialAPI = () => {
     axios.get('http://localhost:8080/api/v1/products').then((result) => {
-      console.log(result.data);
+      console.log(result.data.data.products);
+      setProduct(result.data.data.products);
     }).catch((err) => {
       console.log(err);
     })
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +57,31 @@ function App() {
           </form>
         </div>
       </nav>
+
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Stocks</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            getProduct.map((obj, index) => {
+              return (<tr key={index}>
+                <th scope="row">{index + 1}</th>
+                <td>{obj.name}</td>
+                <td>{obj.price}</td>
+                <td>{obj.stocks}</td>
+              </tr>)
+            })
+          }
+
+        </tbody>
+      </table>
+
     </div>
   );
 }

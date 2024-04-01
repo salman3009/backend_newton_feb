@@ -8,5 +8,10 @@
         "name":"SONY",
         "price":5000,
         "stocks":2
+    },
+    {
+        "name":"SAMSUNG",
+        "price":8000,
+        "stocks":5
     }
 ]
