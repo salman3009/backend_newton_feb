@@ -10,7 +10,7 @@ app.get('/api/v1/products',(req,res)=>{
         status:"Success",
         message:"successfully fetched",
         data:{
-            products 
+          products 
         }
     })
 })
