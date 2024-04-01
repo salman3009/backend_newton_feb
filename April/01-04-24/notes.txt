@@ -1,0 +1,6 @@
+Environment Variable:
+//we can configure our appliction constants outside of codebase.
+//Environment Variable provide information about the Environment in which process is running.
+//Environment Variable handles sensitive data like db username , db password, payments keys.
+
+
