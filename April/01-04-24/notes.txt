@@ -2,5 +2,19 @@ Environment Variable:
 //we can configure our appliction constants outside of codebase.
 //Environment Variable provide information about the Environment in which process is running.
 //Environment Variable handles sensitive data like db username , db password, payments keys.
+==========================================
+route parameters or params 
+http://localhost:8080/products/44
+//44 is route parameter or params 
+//passing dynamic value in the url or dynamic api or dynamic restapi 
+
+Query parameter 
+http://localhost:8080/products?name="lg"&price="4000"
+optional parameter
+http://localhost:8080/products?name="lg"
+or 
+http://localhost:8080/products
+========================================================
+
 
 
