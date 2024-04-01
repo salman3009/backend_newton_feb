@@ -1,0 +1,12 @@
+[
+    {
+        "name":"LG",
+        "price":4000,
+        "stocks":4
+    },
+    {
+        "name":"SONY",
+        "price":5000,
+        "stocks":2
+    }
+]

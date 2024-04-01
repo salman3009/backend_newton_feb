@@ -1,9 +1,17 @@
 const express = require('express');
 const app = express();
+const fs = require('fs');
 
-app.get('',(req,res)=>{
+const products = JSON.parse(fs.readFileSync('./data/products.json'));
+console.log(products);
+
+app.get('/api/v1/products',(req,res)=>{
     res.status(200).json({
-        message:"successfully fetched"
+        status:"Success",
+        message:"successfully fetched",
+        data:{
+            products 
+        }
     })
 })
 
