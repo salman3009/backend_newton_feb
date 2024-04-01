@@ -18,4 +18,13 @@ http://localhost:8080/products
 Ecommerce API URL:
 http://localhost:8080/api/v1/products
 =========================================
+CORS 
+CROSS ORIGIN RESOURCE SHARING
 
+Backend project 
+npm:npm i cors
+
+app.js 
+const cors = require('cors');
+app.use(cors());
+==================================
