@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 function App() {
 
   const [getProduct, setProduct] = useState([]);
+  
   useEffect(() => {
     initialAPI();
   }, [])
