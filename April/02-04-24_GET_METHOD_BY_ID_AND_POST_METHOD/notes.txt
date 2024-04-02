@@ -6,3 +6,8 @@ Anything from 500 to 599 - server side error
 201 - For creating data in backend 
 404 - Resource not able to find in backend 
 ===========================================
+GET - fetching existing data 
+POST - posting new data 
+PATCH - Editing existing data 
+DELETE - DELETING existing data
+==================================
