@@ -46,13 +46,26 @@ app.get("/api/v1/products/:id",(req,res)=>{
 
 app.post("/api/v1/products",(req,res)=>{
       
-      const newId = products[products.length-1].id+1;
-      console.log(newId);
+      const id = products[products.length-1].id+1;
+      console.log(id);
       const {name,price,stocks} = req.body;
 
-     res.status(201).json({
-      status:"success",
-      message:"Product registered successfully"
-     })
+      const newProduct={id,name,price,stocks};
+      products.push(newProduct);
+      
+      fs.writeFile('./data/products.json',JSON.stringify(products),()=>{
+        res.status(201).json({
+          status:"success",
+          message:"Product registered successfully",
+          data:{
+            productDetails:newProduct
+          }
+         })
+      })
+
+
+
+
+    
 })
 module.exports = app;

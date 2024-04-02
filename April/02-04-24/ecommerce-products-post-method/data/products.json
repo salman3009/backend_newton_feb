@@ -1,20 +1,26 @@
 [
     {
-        "id":1,
-        "name":"LG",
-        "price":4000,
-        "stocks":4
+        "id": 1,
+        "name": "LG",
+        "price": 4000,
+        "stocks": 4
     },
     {
-        "id":2,
-        "name":"SONY",
-        "price":5000,
-        "stocks":2
+        "id": 2,
+        "name": "SONY",
+        "price": 5000,
+        "stocks": 2
     },
     {
-        "id":3,
-        "name":"SAMSUNG",
-        "price":8000,
-        "stocks":5
+        "id": 3,
+        "name": "SAMSUNG",
+        "price": 8000,
+        "stocks": 5
+    },
+    {
+        "id": 4,
+        "name": "apple",
+        "price": 7000,
+        "stocks": 5
     }
 ]
