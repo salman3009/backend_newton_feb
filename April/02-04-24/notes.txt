@@ -1,0 +1,8 @@
+Anything from 200-299 - success 
+Anything from 400 to 499 - client side error 
+Anything from 500 to 599 - server side error 
+
+200 - For fetching data 
+201 - For creating data in backend 
+404 - Resource not able to find in backend 
+===========================================
