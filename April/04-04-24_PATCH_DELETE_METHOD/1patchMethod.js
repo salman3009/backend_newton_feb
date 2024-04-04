@@ -33,7 +33,4 @@ Object.assign(result,object);
 
 console.log(result);
 
-//seprate copy
-// result={...result,...object};
-
 console.log(products);
