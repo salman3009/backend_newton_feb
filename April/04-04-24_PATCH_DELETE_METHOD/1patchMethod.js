@@ -16,6 +16,7 @@ let products=[
 //params
 let id = 2;
 
+//reference object
 let result = products.find((obj)=>{
     return obj.id == id;
 });
@@ -25,8 +26,12 @@ let object={
     price: 10000
 }
 
+//reference_object--new data
 Object.assign(result,object);
 
 console.log(result);
+
+//seprate copy
+// result={...result,...object};
 
 console.log(products);
