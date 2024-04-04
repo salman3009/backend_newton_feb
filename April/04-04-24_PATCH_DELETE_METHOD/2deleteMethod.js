@@ -8,5 +8,9 @@ let ref = list.find((obj)=>{
    return obj.name == 'akash';
 })
 
-let resultList = list.indexOf(ref);
-console.log(resultList);
+let index = list.indexOf(ref);
+console.log(index);
+
+list.splice(index,1);
+
+console.log(list);
