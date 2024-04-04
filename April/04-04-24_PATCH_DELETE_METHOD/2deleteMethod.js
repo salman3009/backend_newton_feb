@@ -11,6 +11,7 @@ let ref = list.find((obj)=>{
 let index = list.indexOf(ref);
 console.log(index);
 
+//1 means delete only one data
 list.splice(index,1);
 
 console.log(list);
