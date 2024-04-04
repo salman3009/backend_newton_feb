@@ -70,10 +70,38 @@ app.post("/api/v1/products", (req, res) => {
       }
     })
   })
+})
 
+app.patch('/api/v1/products/:id',(req,res)=>{
 
+   const id = Number(req.params.id);
 
+   const product = products.find((obj) => {
+    return obj.id == id;
+   });
+
+   if(!product){
+      return res.status(404).json({
+        status:"failed",
+        message:"product not found"
+      })
+   }
+   else{
+      Object.assign(product,req.body);
+      fs.writeFile('./data/products.json', JSON.stringify(products), () => {
+        res.status(200).json({
+          status: "success",
+          message: "Product updated successfully",
+          data: {
+            updatedProduct: product
+          }
+        })
+      })
+   }
+ 
+    
 
 
 })
+
 module.exports = app;

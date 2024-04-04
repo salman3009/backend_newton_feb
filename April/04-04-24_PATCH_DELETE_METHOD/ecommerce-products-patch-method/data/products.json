@@ -1,8 +1,1 @@
-[
-    {
-        "id": 1,
-        "name": "micromax",
-        "price": 7000,
-        "stocks": 5
-    }
-]
+[{"id":1,"name":"micromax","price":10000,"stocks":10}]

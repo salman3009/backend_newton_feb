@@ -194,6 +194,24 @@
 				"url": "http://localhost:8080/api/v1/products"
 			},
 			"response": []
+		},
+		{
+			"name": "PATCH_METHOD_ecommerce",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {       \n                \"price\": 10000\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products/1"
+			},
+			"response": []
 		}
 	]
 }

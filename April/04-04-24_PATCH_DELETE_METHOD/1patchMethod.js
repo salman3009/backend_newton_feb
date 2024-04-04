@@ -21,6 +21,8 @@ let result = products.find((obj)=>{
     return obj.id == id;
 });
 
+console.log(result);
+
 //body data
 let object={
     price: 10000
