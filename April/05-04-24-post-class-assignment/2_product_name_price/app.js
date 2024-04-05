@@ -7,6 +7,7 @@ const products = JSON.parse(fs.readFileSync('./data/products.json'));
 app.use(express.json());
 
 app.get("/api/v1/products/:name/:price",(req,res)=>{
+    
      const name = req.params.name;
      const price = Number(req.params.price);
 
