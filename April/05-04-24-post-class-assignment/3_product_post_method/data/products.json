@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Nirma",
+        "price": 2000,
+        "quantity": 3
+    },
+    {
+        "id": 2,
+        "name": "lg",
+        "price": 5000,
+        "quantity": 4
+    },
+    {
+        "id": 3,
+        "name": "sony",
+        "price": 3000,
+        "quantity": 5
+    },
+    {
+        "id": 4,
+        "name": "apple",
+        "price": 7000
+    },
+    {
+        "id": 5,
+        "name": "apple",
+        "price": 7000,
+        "quantity": 5
+    }
+]
