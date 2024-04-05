@@ -43,7 +43,7 @@ app.patch("/api/v1/products/:id",(req,res)=>{
      else{
          return res.status(404).json({
              status:"success",
-             message:`${product.name}, Out of stock!`
+             message:`${product.name} , Out of stock!`
          }) 
      }
 
