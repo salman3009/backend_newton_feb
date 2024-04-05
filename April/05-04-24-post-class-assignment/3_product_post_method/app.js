@@ -17,18 +17,13 @@ app.post("/api/v1/products",(req,res)=>{
 
        fs.writeFile('./data/products.json',JSON.stringify(products),()=>{
         return res.status(201).json({
-            status:"success",
+            status:"Success",
             message:"Product added successfully",
             data:{
                 newProduct
             }
         })
        })
- 
-    
-      
-     
-
 
 })
 
