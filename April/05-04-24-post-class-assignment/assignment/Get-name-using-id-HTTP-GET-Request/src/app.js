@@ -15,7 +15,7 @@ app.use(express.json())
 
 app.get("/api/v1/names/:id",(req,res)=>{
     
-    const id = req.params.id;
+    const id = Number(req.params.id);
 
     const product = productNames.find((obj)=>{
       return obj.id == id;
