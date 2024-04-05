@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"Nirma",
+        "price":2000
+    },
+    {
+        "id":2,
+        "name":"lg",
+        "price":5000
+    },
+    {
+        "id":3,
+        "name":"sony",
+        "price":3000
+    }
+]
