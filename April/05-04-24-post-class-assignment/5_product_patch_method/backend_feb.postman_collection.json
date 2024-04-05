@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "b31e154c-5d91-4ec8-bd5d-12fa9eec8a6a",
+		"name": "backend_feb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3112594"
+	},
+	"item": [
+		{
+			"name": "GET_METHOD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"akash\",\n    \"age\":33\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080"
+			},
+			"response": []
+		},
+		{
+			"name": "ASSIGNMENT_EVEN_ODD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":\"7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000"
+			},
+			"response": []
+		},
+		{
+			"name": "ASSIGNMENT_EXPO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":2,\n    \"num2\":3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/add"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_SUB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/sub"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_MUL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/mul"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_DIV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"num1\":40,\n    \"num2\":0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/div"
+			},
+			"response": []
+		},
+		{
+			"name": "PARAMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/product/22"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_METHOD_ecommerce",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_METHOD_ecommerce_By-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_METHOD_ecommerce",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {       \n                \"name\": \"apple\",\n                \"price\": 7000,\n                \"stocks\": 5\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH_METHOD_ecommerce",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {       \n                \"price\": 10000\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_METHOD_ecommerce",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products/1"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_next-num_assignment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"num\": 13 } ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GET_product_name_price_assignment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"num\": 13 } ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products/dd/2000"
+			},
+			"response": []
+		},
+		{
+			"name": "POST_Product-level-5-assignment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {       \n                \"name\": \"apple\",\n                \"price\": 7000,\n                \"quantity\": 5\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH_BUY_PRODUCT_ASSIGNMENT",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products/1"
+			},
+			"response": []
+		}
+	]
+}
