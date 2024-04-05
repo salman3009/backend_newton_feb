@@ -32,7 +32,7 @@ app.get("/api/v1/names/:id",(req,res)=>{
            status:"success",
            message:"Product name fetched successfully",
            data:{
-               names:product
+               name:product
            }
        })
     }
