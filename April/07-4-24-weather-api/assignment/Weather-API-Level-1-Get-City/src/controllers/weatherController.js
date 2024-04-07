@@ -29,7 +29,7 @@ async function saveDataToDatabase(data) {
 async function getWeatherDataByName(cityName) {
   const data = await getDataFromDatabase();
   const cityData = data.find((obj)=>{
-   return obj.city.toLowercae() === cityName.toLowercae();
+   return obj.city.toLowerCase() === cityName.toLowerCase();
   })
   if(cityData){
     return cityData.weather
