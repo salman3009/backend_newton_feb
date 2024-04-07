@@ -296,7 +296,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8080/api/v1/products/city/delhi"
+				"url": "http://localhost:8080/api/v1/weather/city/delhi"
 			},
 			"response": []
 		}

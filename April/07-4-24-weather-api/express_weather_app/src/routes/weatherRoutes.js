@@ -1,14 +1,17 @@
 const express = require('express');
 const router = express.Router();
+const weatherController = require('../controller/weatherController');
+
 
 router.get("/city/:name",(req,res)=>{
 
     try{
-       console.log(req.params.name);
+       const cityName = req.params.name;
+       const weatherData = weatherController.getWeatherDataByName(cityName);
        res.status(200).json({
          status:"success",
          message:"weather data retrived",
-         data:[]
+         data:weatherData
        })
     }
     catch(err){
