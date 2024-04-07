@@ -2,7 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get("/city/:name",(req,res)=>{
+
     try{
+       console.log(req.params.name);
        res.status(200).json({
          status:"success",
          message:"weather data retrived",
@@ -17,4 +19,8 @@ router.get("/city/:name",(req,res)=>{
     }
 })
 
+
+router.post('/country',(req,res)=>{
+        res.status(201).json({message:"post method"});
+})
 module.exports = router;
