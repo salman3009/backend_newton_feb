@@ -233,5 +233,14 @@
                 "conditions": "Cloudy"
             }
         }
+    },
+    {
+        "city": "Bangalore",
+        "humidity": "80"
+    },
+    {
+        "city": "Bangalore",
+        "date": "30/09/2024",
+        "humidity": "80"
     }
 ]

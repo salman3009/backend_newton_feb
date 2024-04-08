@@ -6,7 +6,7 @@ router.get('/cityName', async(req,res)=>{
     try{
      let result = await weatherController.getWeatherDetails();
      res.status(200).json({
-        message:"success",
+        status:"success",
         data:{
             result
         }
@@ -14,8 +14,23 @@ router.get('/cityName', async(req,res)=>{
 
     }catch(err){
         res.status(404).json({
-            message:"failed"
+            status:"failed"
         })
+    }
+})
+
+router.post('/cityName',async (req,res)=>{
+    try{
+      let {city,date,humidity} = req.body;
+      let result = await weatherController.postWeatherDetails({city,date,humidity});
+      res.status(200).json({
+        status:"success",
+        message:"weather alert saved successfully"
+     })
+    }catch(err){
+        res.status(404).json({
+            status:"failed"
+        }) 
     }
 })
 
