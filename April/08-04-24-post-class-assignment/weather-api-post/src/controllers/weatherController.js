@@ -34,8 +34,13 @@ function saveDataToDatabase(data) {
 
 
 async function getWeatherDetails() {
-    let result = await getDataFromDatabase();
-    return result;
+    try{
+        let result = await getDataFromDatabase();
+        return result;
+    }catch(err){
+        return err;
+    }
+ 
 }
 
 async function postWeatherDetails(data) {
