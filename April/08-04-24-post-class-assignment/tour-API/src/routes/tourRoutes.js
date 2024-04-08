@@ -16,13 +16,13 @@ router.get('/', async(req,res)=>{
     }
 })
 
-router.post('/cityName',async (req,res)=>{
+router.post('/',async (req,res)=>{
     try{
-      let {city,date,humidity} = req.body;
-      let result = await weatherController.postWeatherDetails({city,date,humidity});
+      let {name,description,duration,price} = req.body;
+      console.log("post method");
+      let result = await tourController.postTourDetails({name,description,duration,price});
       res.status(200).json({
-        status:"success",
-        message:"weather alert saved successfully"
+        "message": "Tour added successfully"
      })
     }catch(err){
         res.status(404).json({

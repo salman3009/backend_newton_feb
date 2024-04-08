@@ -38,14 +38,14 @@ async function getTourDetails() {
     }catch(err){
         return err;
     }
- 
 }
 
-async function postWeatherDetails(data) {
+async function postTourDetails(data) {
     try {
         let list = await getDataFromDatabase();
-        list.push(data);
-        console.log("list", list);
+        let id = list[list.length-1].id+1;
+        let newTour = {id,...data};
+        list.push(newTour);
         let result = await saveDataToDatabase(list);
         return result;
     } catch (err) {
@@ -58,5 +58,5 @@ async function postWeatherDetails(data) {
 
 module.exports = {
     getTourDetails,
-    postWeatherDetails
+    postTourDetails
 }
