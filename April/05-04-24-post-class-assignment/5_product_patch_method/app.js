@@ -39,9 +39,6 @@ app.patch("/api/v1/products/:id",(req,res)=>{
         }
 
        }
-      
-
-
 })
 
 module.exports = app;

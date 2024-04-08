@@ -58,6 +58,7 @@ app.post("/api/v1/products", (req, res) => {
   console.log(id);
   const { name, price, stocks } = req.body;
 
+  //{id:id,name:name,price:price,stocks:stocks}
   const newProduct = { id, name, price, stocks };
   products.push(newProduct);
 
