@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const weatherController = require('../controllers/weatherController');
 
-router.get('/cityName',(req,res)=>{
+router.get('/cityName', async(req,res)=>{
     try{
-     let result = weatherController.getWeatherDetails();
+     let result = await weatherController.getWeatherDetails();
      res.status(200).json({
         message:"success",
         data:{
