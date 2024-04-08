@@ -1,6 +1,4 @@
-const { json } = require('express');
 const fs = require('fs');
-const { resolve } = require('path');
 
 function getDataFromDatabase() {
     return new Promise((resolve, reject) => {
