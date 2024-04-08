@@ -31,4 +31,18 @@ router.post('/',async (req,res)=>{
     }
 })
 
+
+router.delete('/:id',async (req,res)=>{
+    try{
+      let {id} = req.params;
+      let result = await tourController.deleteTourDetails(id);
+      res.status(200).json({
+        "message": "Tour deleted successfully"
+     })
+    }catch(err){
+        res.status(404).json({
+            status:"failed"
+        }) 
+    }
+})
 module.exports = router;

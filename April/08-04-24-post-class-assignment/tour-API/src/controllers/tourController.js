@@ -52,11 +52,28 @@ async function postTourDetails(data) {
            return err;
     }
 
+}
+
+
+async function deleteTourDetails(id) {
+    try {
+        let list = await getDataFromDatabase();
+        let index = list.findIndex((obj)=>{
+          return obj.id == id;
+        });
+        list.splice(index,1);
+        let result = await saveDataToDatabase(list);
+        return result;
+    } catch (err) {
+           return err;
+    }
 
 }
 
 
+
 module.exports = {
     getTourDetails,
-    postTourDetails
+    postTourDetails,
+    deleteTourDetails
 }
