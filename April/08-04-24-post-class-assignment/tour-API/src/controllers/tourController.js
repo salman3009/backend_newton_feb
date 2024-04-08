@@ -73,18 +73,33 @@ async function deleteTourDetails(id) {
 
 async function updateTourDetails(id,data) {
     try {
+        // let list = await getDataFromDatabase();
+        // let index = list.findIndex((obj)=>{
+        //   return obj.id == id;
+        // });
+        // if(index == -1){
+        //     throw new Error("id not found");
+        // }
+        // else{
+        //     list[index] = {...list[index],...data};
+        //     let result = await saveDataToDatabase(list);
+        //     return result;
+        // }
+        
         let list = await getDataFromDatabase();
-        let index = list.findIndex((obj)=>{
-          return obj.id == id;
-        });
-        if(index == -1){
+
+        const tourData = list.find((obj) => {
+            return obj.id == id;
+         });
+
+         if(!tourData){
             throw new Error("id not found");
-        }
-        else{
-            list[index] = {...list[index],...data};
+         }
+         else{
+            Object.assign(tourData,data);
             let result = await saveDataToDatabase(list);
             return result;
-        }
+         }
         
     } catch (err) {
            return err;
