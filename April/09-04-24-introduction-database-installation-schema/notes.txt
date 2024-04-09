@@ -1,0 +1,31 @@
+What is Database?
+//It is an information store permanentely inside the hard disk.
+//All over data is store here 
+//It play very important role for entire application.
+//Backend will fetchdata from database used for authentication , authorization etc.
+
+Database is divided into two approached 
+1.SQL  - structured query language
+//Storing data in the form of table rows and columns
+//RDMS - Relational Database (There will be relations between rows and columns) 
+//predefined schema 
+//vertically scalable
+//ACID (Atomicity,Consistency,Isolation,Durability)
+Example:MySQL,Oracle,PostgreSQL
+
+2.NOSQL - No-structure query language 
+//Storing data in the form of document-oriented,key-value with no structure.
+//Non-relational and distributed database 
+//No schema - Dynamic schema 
+//horizontal scalable 
+//Nosql is similar to json format
+//CAP(Consistency,Availability,partition tolerance)
+Example:Mongodb,GraphQL,HBase
+
+
+
+Atomicity - each transaction inside table should get completed otherwise entire process data should be rollback.
+Consistency - all table will have Consistency data.
+Isolation - multiple transaction will happen concurrently but separately.
+Durability - data will be Availabile event it is software or hardware failure.
+partition tolerance - Data easily we can able to divide into multiple machine.
