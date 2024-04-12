@@ -1,5 +1,5 @@
 const mongoClient = require('mongodb').MongoClient;
-const connect = new mongoClient("mongodb://localhost:27017");
+const connect = new mongoClient("mongodb://127.0.0.1:27017");
 const db = connect.db("employeeManagement");
 
 async function find(){

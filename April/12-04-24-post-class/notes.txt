@@ -1,4 +1,4 @@
-MVC - Modal view Controller
+xMVC - Modal view Controller
 Modal - data(database)
 view - user interaface html 
 Controller - business logic 
