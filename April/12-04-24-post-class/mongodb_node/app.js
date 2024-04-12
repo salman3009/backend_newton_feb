@@ -18,9 +18,9 @@ async function create(){
     try{
      let obj ={
         firstName:"rakesh",
-        age:22
+        salary:4000
      }
-     let result = await db.collection('employeeDetails').insertOne(obj);
+     let result = await db.collection('salaryDetails').insertOne(obj);
      console.log(result);
     }catch(err){
         console.log(err);
