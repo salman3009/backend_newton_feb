@@ -1,0 +1,4 @@
+MVC - Modal view Controller
+Modal - data(database)
+view - user interaface html 
+Controller - business logic 
