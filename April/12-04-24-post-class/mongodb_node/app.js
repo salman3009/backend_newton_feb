@@ -11,4 +11,19 @@ async function find(){
     }
 }
 
-find();
+// find();
+
+
+async function create(){
+    try{
+     let obj ={
+        firstName:"rakesh",
+        age:22
+     }
+     let result = await db.collection('employeeDetails').insertOne(obj);
+     console.log(result);
+    }catch(err){
+        console.log(err);
+    }
+}
+create();
