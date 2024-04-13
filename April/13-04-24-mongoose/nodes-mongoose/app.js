@@ -12,7 +12,8 @@ async function createOperation(){
        const employeePost = new Employee({
          firstName:"suresh",
          age:44,
-         salary:4000
+         salary:4000,
+         role:"adasdfdsfmin"
        })
        const result = await employeePost.save();
        console.log(result);
@@ -21,7 +22,7 @@ async function createOperation(){
         console.log(err);
      }
 }
-// createOperation();
+ createOperation();
 
 async function findOperation(){
       try{
@@ -32,4 +33,4 @@ async function findOperation(){
       }
 }
 
-findOperation();
+// findOperation();
