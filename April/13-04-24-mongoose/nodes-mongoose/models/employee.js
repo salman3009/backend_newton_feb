@@ -4,7 +4,8 @@ const employeeSchema =mongoose.Schema({
     firstName:{type:String,required:true},
     lastName:{type:String},
     status:{type:Boolean,required:true,default:false},
-    age:{type:Number,required:true}
+    age:{type:Number,required:true},
+    salary:{type:Number,required:true}
 })
 
 //employee collection name

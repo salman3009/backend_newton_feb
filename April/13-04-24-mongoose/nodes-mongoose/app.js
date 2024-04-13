@@ -10,8 +10,9 @@ mongoose.connect("mongodb://127.0.0.1:27017/mongooseManagement").then(()=>{
 async function createOperation(){
      try{
        const employeePost = new Employee({
-         firstName:"akash",
-         age:44
+         firstName:"suresh",
+         age:44,
+         salary:4000
        })
        const result = await employeePost.save();
        console.log(result);
