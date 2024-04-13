@@ -15,6 +15,11 @@ async function createOperation(){
        })
        const result = await employeePost.save();
        console.log(result);
+        //  employeePost.save().then((result)=>{
+        //        console.log(result);
+        //  }).catch((err)=>{
+        //      console.log(err);
+        //  })
      }
      catch(err){
         console.log(err);
