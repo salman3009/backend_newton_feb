@@ -29,3 +29,10 @@ Consistency - all table will have Consistency data.
 Isolation - multiple transaction will happen concurrently but separately.
 Durability - data will be Availabile event it is software or hardware failure.
 partition tolerance - Data easily we can able to divide into multiple machine.
+
+
+NoSQL - Mongodb 
+
+Installation of Mongodb:
+//Mongodb 
+//Compass - tool

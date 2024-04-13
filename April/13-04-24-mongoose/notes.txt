@@ -1,0 +1,9 @@
+mongoose - ODM (Object Data Modelling)
+Nodejs --- mongoose ---- Mongodb 
+Benefits:
+1.schema we need to provide 
+2.validations 
+3.proper datatype and values 
+4.we have lot of helpers methods similar to mongodb 
+5.all methods in mongoose will return promise
+=================================================
