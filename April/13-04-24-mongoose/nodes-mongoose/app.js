@@ -16,14 +16,20 @@ async function createOperation(){
        })
        const result = await employeePost.save();
        console.log(result);
-        //  employeePost.save().then((result)=>{
-        //        console.log(result);
-        //  }).catch((err)=>{
-        //      console.log(err);
-        //  })
      }
      catch(err){
         console.log(err);
      }
 }
-createOperation();
+// createOperation();
+
+async function findOperation(){
+      try{
+        let result = await Employee.find();
+        console.log(result);
+      }catch(err){
+        console.log(err);
+      }
+}
+
+findOperation();
