@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "name" : "Jatin",
+        "email": "Jatin020010@gmail.com",
+        "pswd" : "mndskhds!mnsmkns",
+        "role" : "buyer"
+    },
+    {
+        "id":2,
+        "name" : "Himanshi",
+        "email": "duhan2003@gmail.com",
+        "pswd" : "mansi@931",
+        "role" : "buyer"
+    },
+    {
+        "id":3,
+        "name" : "Sameer",
+        "email": "bangersammy00@gmail.com",
+        "pswd" : "mnd@6967nsmkns",
+        "role" : "buyer"
+    },
+    {
+        "id":4,
+        "name" : "Swaraj",
+        "email": "Happy2000jain@gmail.com",
+        "pswd" : "mndskhds!mnsmkns",
+        "role" : "buyer"
+    },
+    {
+        "id":5,
+        "name" : "Aman",
+        "email": "amanpreet1502@gmail.com",
+        "pswd" : "mndskhds!mnsmkns",
+        "role" : "seller"
+    }
+]
+    
