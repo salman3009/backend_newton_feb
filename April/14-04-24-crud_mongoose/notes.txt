@@ -1,0 +1,3 @@
+pagination:
+skip() = it will skip data till that number
+limit() = it will limit data till that number 

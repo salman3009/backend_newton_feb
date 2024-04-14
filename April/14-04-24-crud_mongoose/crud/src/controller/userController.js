@@ -20,7 +20,7 @@ async function createUsers(data) {
 async function findUsers() {
     try {
 
-        let result = await UserSchema.find();
+        let result = await UserSchema.find().skip(5).limit(5);
         return result;
 
     } catch (err) {
