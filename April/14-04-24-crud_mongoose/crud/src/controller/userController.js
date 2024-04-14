@@ -13,7 +13,7 @@ async function createUsers(data){
 
     }catch(err)
     {
-        throw new Error(err);
+        return err;
     }
 }
 
@@ -26,7 +26,7 @@ async function findUsers(){
 
     }catch(err)
     {
-        throw new Error(err);
+        return err;
     }
 }
 
