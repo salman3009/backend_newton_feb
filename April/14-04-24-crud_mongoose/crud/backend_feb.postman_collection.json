@@ -85,6 +85,27 @@
 						"url": "http://localhost:8080/api/v1/users"
 					},
 					"response": []
+				},
+				{
+					"name": "GET_METHOD",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n           \"name\":\"amol\",\n           \"email\":\"amol@gmail.com\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/users"
+					},
+					"response": []
 				}
 			]
 		},

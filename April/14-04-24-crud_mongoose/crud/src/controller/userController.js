@@ -7,7 +7,7 @@ async function createUsers(data){
             name:data.name,
             email:data.email
         })
-        
+
          let result = await user.save();
          return result;
 
@@ -17,6 +17,21 @@ async function createUsers(data){
     }
 }
 
+
+async function findUsers(){
+    try{
+    
+         let result = await UserSchema.find();
+         return result;
+
+    }catch(err)
+    {
+        throw new Error(err);
+    }
+}
+
+
 module.exports ={
-    createUsers
+    createUsers,
+    findUsers
 }

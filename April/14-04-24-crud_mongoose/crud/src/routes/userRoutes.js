@@ -17,4 +17,19 @@ router.post('/',async (req,res)=>{
     }
 })
 
+
+router.get('/',async (req,res)=>{
+  try{
+    let data = await userController.findUsers();
+    res.status(200).json({
+      status:"success",
+      data
+    })
+  }catch(err){
+      res.status(404).json({
+          status:"failed",
+          message:err
+      })
+  }
+})
 module.exports = router;
