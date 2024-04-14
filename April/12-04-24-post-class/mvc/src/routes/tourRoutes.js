@@ -17,4 +17,19 @@ router.get('/',async(req,res)=>{
     }
 })
 
+
+router.get('/:id',async(req,res)=>{
+  try{
+    let data = await tourController.getTourDetails(id);
+    res.status(200).json({
+      status:"success",
+      data
+    })
+  }catch(err){
+      res.status(404).json({
+          status:failed,
+          message:err.mesage
+      })
+  }
+})
 module.exports = router;

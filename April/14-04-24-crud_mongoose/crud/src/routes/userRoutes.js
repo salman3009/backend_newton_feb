@@ -32,4 +32,27 @@ router.get('/',async (req,res)=>{
       })
   }
 })
+
+router.get('/:id',async (req,res)=>{
+  try{
+    let data = await userController.findByIdUsers(req.params.id);
+    if(!data){
+      res.status(404).json({
+        status:"failed",
+        message:"user not found"
+      })
+    }else{
+      res.status(200).json({
+        status:"success",
+        data
+      })
+    }
+ 
+  }catch(err){
+      res.status(404).json({
+          status:"failed",
+          message:err
+      })
+  }
+})
 module.exports = router;

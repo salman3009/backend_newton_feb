@@ -31,7 +31,20 @@ async function findUsers(){
 }
 
 
+async function findByIdUsers(id){
+    try{
+    
+         let result = await UserSchema.findById(id);
+         return result;
+
+    }catch(err)
+    {
+        return err;
+    }
+}
+
 module.exports ={
     createUsers,
-    findUsers
+    findUsers,
+    findByIdUsers
 }
