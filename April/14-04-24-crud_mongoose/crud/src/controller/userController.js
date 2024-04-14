@@ -1,8 +1,16 @@
+const UserSchema = require('../models/userModal');
 
-
-function createUsers(){
+async function createUsers(data){
     try{
-      return "usercreated";
+      
+        const user = new UserSchema({
+            name:data.name,
+            email:data.email
+        })
+        
+         let result = await user.save();
+         return result;
+
     }catch(err)
     {
         throw new Error(err);

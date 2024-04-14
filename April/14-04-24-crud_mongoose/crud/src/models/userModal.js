@@ -5,4 +5,5 @@ const userSchema = mongoose.Schema({
     email:{type:String,required:true}
 })
 
-module.exports = mongoose.models('User',userSchema);
+//User collection name
+module.exports = mongoose.model('User',userSchema);
