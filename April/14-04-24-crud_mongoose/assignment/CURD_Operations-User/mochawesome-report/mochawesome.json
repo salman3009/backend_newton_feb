@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-09-13T13:06:27.753Z",
+    "end": "2023-09-13T13:07:07.879Z",
+    "duration": 40126,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5264dc6c-a6dc-48d9-8506-35cd040a16a2",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c09132cf-c2e1-4906-8ca2-2aeedd17308b",
+          "title": "User Routes",
+          "fullFile": "D:\\Newton\\CRUD operations\\crud_operation\\__tests__\\test.js",
+          "file": "\\__tests__\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"User Routes\"",
+              "fullTitle": "User Routes \"before all\" hook in \"User Routes\"",
+              "timedOut": false,
+              "duration": 30026,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await mongoose\n  .connect(testURI, {\n    useNewUrlParser: true,\n    useUnifiedTopology: true,\n  })\n  .then((res) => console.log('> Connected...'))\n  .catch((err) =>\n    console.log(`> Error while connecting to mongoDB : ${err.message}`)\n  );",
+              "err": {},
+              "uuid": "1cacef5a-1582-4002-99bd-a61a75d50dd9",
+              "parentUUID": "c09132cf-c2e1-4906-8ca2-2aeedd17308b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should create a new user",
+              "fullTitle": "User Routes should create a new user",
+              "timedOut": false,
+              "duration": 10091,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const newUser = {\n  name: 'John Doe',\n  email: 'johndoe@example.com',\n};\ntry {\n  const res = await chai.request(app).post('/api/users').send(newUser);\n  expect(res).to.have.status(201);\n  expect(res.body).to.be.an('object');\n  expect(res.body.message).to.equal('User created');\n  expect(res.body.user).to.have.property('_id');\n} catch (error) {\n  console.error('Error in test:', error);\n  throw error;\n}",
+              "err": {
+                "message": "AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 500",
+                "estack": "AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 500\n    at Context.<anonymous> (__tests__\\test.js:38:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": "- 500\n+ 201\n"
+              },
+              "uuid": "341f8d3c-a909-4016-a9c9-6f45a97c6470",
+              "parentUUID": "c09132cf-c2e1-4906-8ca2-2aeedd17308b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "341f8d3c-a909-4016-a9c9-6f45a97c6470"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10091,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
