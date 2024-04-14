@@ -145,6 +145,24 @@
 						"url": "http://localhost:8080/api/v1/users/661b93441861a237d4ca3054"
 					},
 					"response": []
+				},
+				{
+					"name": "UPDATE_METHOD",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n           \"name\":\"manoj\",\n           \"email\":\"manoj@gmail.com\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/users/661b9322a94b30e719b7aac3"
+					},
+					"response": []
 				}
 			]
 		},

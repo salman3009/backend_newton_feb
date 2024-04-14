@@ -1,63 +1,76 @@
 const UserSchema = require('../models/userModal');
 
-async function createUsers(data){
-    try{
-      
+async function createUsers(data) {
+    try {
+
         const user = new UserSchema({
-            name:data.name,
-            email:data.email
+            name: data.name,
+            email: data.email
         })
 
-         let result = await user.save();
-         return result;
+        let result = await user.save();
+        return result;
 
-    }catch(err)
-    {
+    } catch (err) {
         return err;
     }
 }
 
 
-async function findUsers(){
-    try{
-    
-         let result = await UserSchema.find();
-         return result;
+async function findUsers() {
+    try {
 
-    }catch(err)
-    {
+        let result = await UserSchema.find();
+        return result;
+
+    } catch (err) {
         return err;
     }
 }
 
 
-async function findByIdUsers(id){
-    try{
-    
-         let result = await UserSchema.findById(id);
-         return result;
+async function findByIdUsers(id) {
+    try {
 
-    }catch(err)
-    {
+        let result = await UserSchema.findById(id);
+        return result;
+
+    } catch (err) {
         return err;
     }
 }
 
 
-async function deleteByIdUsers(id){
-    try{
-    
-         let result = await UserSchema.findByIdAndDelete(id);
-         return result;
+async function deleteByIdUsers(id) {
+    try {
 
-    }catch(err)
-    {
+        let result = await UserSchema.findByIdAndDelete(id);
+        return result;
+
+    } catch (err) {
         return err;
     }
 }
-module.exports ={
+
+
+
+async function updateByIdUsers(id,body) {
+    try {
+
+        let result = await UserSchema.findByIdAndUpdate(id,body,{
+            new:true
+        });
+        return result;
+
+    } catch (err) {
+        return err;
+    }
+}
+
+module.exports = {
     createUsers,
     findUsers,
     findByIdUsers,
-    deleteByIdUsers
+    deleteByIdUsers,
+    updateByIdUsers
 }

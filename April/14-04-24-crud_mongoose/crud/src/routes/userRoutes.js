@@ -79,4 +79,28 @@ router.delete('/:id',async (req,res)=>{
       })
   }
 })
+
+
+router.patch('/:id',async (req,res)=>{
+  try{
+    let data = await userController.updateByIdUsers(req.params.id,req.body);
+    if(!data){
+      res.status(404).json({
+        status:"failed",
+        message:"user not found"
+      })
+    }else{
+      res.status(200).json({
+        status:"updated successfully",
+        data
+      })
+    }
+ 
+  }catch(err){
+      res.status(404).json({
+          status:"failed",
+          message:err
+      })
+  }
+})
 module.exports = router;
