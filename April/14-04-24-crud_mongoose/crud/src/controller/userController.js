@@ -43,8 +43,21 @@ async function findByIdUsers(id){
     }
 }
 
+
+async function deleteByIdUsers(id){
+    try{
+    
+         let result = await UserSchema.findByIdAndDelete(id);
+         return result;
+
+    }catch(err)
+    {
+        return err;
+    }
+}
 module.exports ={
     createUsers,
     findUsers,
-    findByIdUsers
+    findByIdUsers,
+    deleteByIdUsers
 }

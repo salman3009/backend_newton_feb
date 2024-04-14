@@ -127,6 +127,24 @@
 						"url": "http://localhost:8080/api/v1/users/661b8fd50ab4635b46abafef"
 					},
 					"response": []
+				},
+				{
+					"name": "delete_by_id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n           \"name\":\"amol\",\n           \"email\":\"amol@gmail.com\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/users/661b93441861a237d4ca3054"
+					},
+					"response": []
 				}
 			]
 		},
