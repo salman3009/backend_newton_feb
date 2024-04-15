@@ -1,0 +1,44 @@
+[
+    {
+        "p_id": "0",
+        "name": "Iphone 14 Pro Max",
+        "price":130000,
+        "Quantity": 27,
+        "instock": "Yes"
+    },
+    {
+        "p_id": "1",
+        "name": "HP Laptop",
+        "price":56000,
+        "Quantity": 14,
+        "instock": "Yes"
+    },
+    {
+        "p_id": "2",
+        "name": "Macbook Air M2",
+        "price":119000,
+        "Quantity": 0,
+        "instock": "No"
+    },
+    {
+        "p_id": "3",
+        "name": "Macbook Air M1",
+        "price":160000,
+        "Quantity": 52,
+        "instock": "Yes"
+    },
+    {
+        "p_id": "4",
+        "name": "Macbook PRO M1",
+        "price":180000,
+        "Quantity": 0,
+        "instock": "No"
+    },
+    {
+        "p_id": "5",
+        "name": "Macbook PRO M2",
+        "price":210000,
+        "Quantity": 34,
+        "instock": "Yes"
+    }
+]
