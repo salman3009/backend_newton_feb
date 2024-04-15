@@ -1,0 +1,38 @@
+Folder structure:
+
+crud-product 
+     package.json 
+     .env
+     .gitignore
+     src 
+        controller 
+        models 
+        routes 
+        app.js 
+        index.js 
+
+packages need to install 
+1.express 
+2.mongoose 
+3.dotenv 
+4.nodemon 
+
+mongoose methods crud 
+1.connect 
+2.save 
+3.find() 
+4.findById()
+5.findByIdAndUpdate()
+6.findByIdAndDelete()
+
+mongoose schema 
+1.Schema 
+2.model 
+
+To access from frontend 
+body 
+req.body 
+params 
+req.params 
+
+express.json()
