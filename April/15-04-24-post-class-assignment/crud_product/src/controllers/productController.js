@@ -35,9 +35,19 @@ async function updateProductById(id,body){
 }
 
 
+async function deleteProductById(id){
+    try{
+        let result =await productSchema.findByIdAndDelete(id);
+        return result;
+    }catch(err){
+        return err;
+    }
+}
+
 
 module.exports={
     createProduct,
     getProductById,
-    updateProductById
+    updateProductById,
+    deleteProductById
 }

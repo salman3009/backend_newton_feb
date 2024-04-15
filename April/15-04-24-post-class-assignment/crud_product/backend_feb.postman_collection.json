@@ -225,6 +225,24 @@
 						"url": "http://localhost:8080/api/v1/product/661d4d05857cfecc23cfe748"
 					},
 					"response": []
+				},
+				{
+					"name": "find_by_id_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n           \"price\":4000\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/product/661d4d05857cfecc23cfe748"
+					},
+					"response": []
 				}
 			]
 		},

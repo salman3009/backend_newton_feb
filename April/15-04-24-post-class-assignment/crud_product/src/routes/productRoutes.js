@@ -49,4 +49,19 @@ router.patch('/:id',async (req,res)=>{
    }
 })
 
+
+router.delete('/:id',async (req,res)=>{
+   try{
+    let result = await productController.deleteProductById(req.params.id);
+    res.status(200).json({
+       status:"deleted successfully",
+       result
+    })
+   }catch(err){
+      res.status(404).json({
+       status:"failed",
+       message:err
+      })
+   }
+})
 module.exports = router;
