@@ -34,4 +34,19 @@ router.get('/:id',async (req,res)=>{
 })
 
 
+router.patch('/:id',async (req,res)=>{
+   try{
+    let result = await productController.updateProductById(req.params.id,req.body);
+    res.status(200).json({
+       status:"success",
+       result
+    })
+   }catch(err){
+      res.status(404).json({
+       status:"failed",
+       message:err
+      })
+   }
+})
+
 module.exports = router;

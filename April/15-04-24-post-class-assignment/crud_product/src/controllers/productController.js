@@ -25,7 +25,19 @@ async function getProductById(id){
 }
 
 
+async function updateProductById(id,body){
+    try{
+        let result =await productSchema.findByIdAndUpdate(id,body,{new:true});
+        return result;
+    }catch(err){
+        return err;
+    }
+}
+
+
+
 module.exports={
     createProduct,
-    getProductById
+    getProductById,
+    updateProductById
 }
