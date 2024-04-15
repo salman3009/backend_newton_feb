@@ -17,4 +17,21 @@ router.post('/',async (req,res)=>{
     }
 })
 
+
+router.get('/:id',async (req,res)=>{
+   try{
+    let result = await productController.getProductById(req.params.id);
+    res.status(200).json({
+       status:"success",
+       result
+    })
+   }catch(err){
+      res.status(404).json({
+       status:"failed",
+       message:err
+      })
+   }
+})
+
+
 module.exports = router;

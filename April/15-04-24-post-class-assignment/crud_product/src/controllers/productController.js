@@ -1,3 +1,4 @@
+const productSchema = require('../models/productSchema');
 const ProductSchema = require('../models/productSchema');
 
 async function createProduct(data){
@@ -13,6 +14,18 @@ async function createProduct(data){
     }
 }
 
+
+async function getProductById(id){
+    try{
+        let result =await productSchema.findById(id);
+        return result;
+    }catch(err){
+        return err;
+    }
+}
+
+
 module.exports={
-    createProduct
+    createProduct,
+    getProductById
 }
