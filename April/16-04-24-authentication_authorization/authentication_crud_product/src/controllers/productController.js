@@ -1,5 +1,5 @@
 const productSchema = require('../models/productSchema');
-const ProductSchema = require('../models/productSchema');
+
 
 async function createProduct(req,res) {
     try {
