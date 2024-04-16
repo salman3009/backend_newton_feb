@@ -54,22 +54,34 @@ async function getProduct(req, res) {
 
 
 
-async function updateProductById(id, body) {
+async function updateProductById(req, res) {
     try {
-        let result = await productSchema.findByIdAndUpdate(id, body, { new: true });
-        return result;
+        let result = await productSchema.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        res.status(200).json({
+            status:"success",
+            result
+         })
     } catch (err) {
-        return err;
+        res.status(404).json({
+            status:"failed",
+            message:err
+           })
     }
 }
 
 
-async function deleteProductById(id) {
+async function deleteProductById(req,res) {
     try {
-        let result = await productSchema.findByIdAndDelete(id);
-        return result;
+        let result = await productSchema.findByIdAndDelete(req.params.id);
+        res.status(200).json({
+            status:"deleted successfully",
+            result
+         })
     } catch (err) {
-        return err;
+        res.status(404).json({
+            status:"failed",
+            message:err
+           })
     }
 }
 
