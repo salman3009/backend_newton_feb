@@ -32,6 +32,7 @@ async function login(req,res){
         }
         else{
             const user = await UserSchema.findOne({email:email});
+            console.log(user);
             if(!user){
                 return res.status(404).json({
                     status:"failed",
