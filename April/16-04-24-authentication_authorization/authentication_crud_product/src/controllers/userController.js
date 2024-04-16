@@ -1,4 +1,5 @@
 const UserSchema = require('../models/userSchema');
+const jwt = require('jsonwebtoken');
 
 async function registration(req,res) {
     try {
@@ -46,9 +47,10 @@ async function login(req,res){
                 })
             }
 
+            const token = jwt.sign({payload:user},"newton_school_secret",{expiresIn:"1m"});
             res.status(201).json({
                 status:"success",
-                token:"xyz"
+                token:token
              })
 
         }
