@@ -17,21 +17,23 @@ router.post('/',async (req,res)=>{
     }
 })
 
-router.get('/',async (req,res)=>{
-   try{
-    let result = await getProduct();
-    res.status(200).json({
-       status:"success",
-       result
-    })
-   }catch(err){
-      res.status(404).json({
-       status:"failed",
-       message:err
-      })
-   }
-})
+// router.get('/',async (req,res)=>{
+//    try{
+//     let result = await getProduct();
+//     res.status(200).json({
+//        status:"success",
+//        result
+//     })
+//    }catch(err){
+//       res.status(404).json({
+//        status:"failed",
+//        message:err
+//       })
+//    }
+// })
 
+
+router.get('/',getProduct);
 router.get('/:id',async (req,res)=>{
    try{
     let result = await getProductById(req.params.id);
