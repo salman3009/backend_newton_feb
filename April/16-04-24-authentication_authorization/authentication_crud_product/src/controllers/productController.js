@@ -3,7 +3,8 @@ const productSchema = require('../models/productSchema');
 
 async function createProduct(req,res) {
     try {
-        const product = new ProductSchema({
+        console.log(req.body);
+        const product = new productSchema({
             productName: req.body.productName,
             price: req.body.price
         })
