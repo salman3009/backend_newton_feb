@@ -1,16 +1,22 @@
 const productSchema = require('../models/productSchema');
 const ProductSchema = require('../models/productSchema');
 
-async function createProduct(data) {
+async function createProduct(req,res) {
     try {
         const product = new ProductSchema({
-            productName: data.productName,
-            price: data.price
+            productName: req.body.productName,
+            price: req.body.price
         })
         let result = await product.save();
-        return result;
+        res.status(201).json({
+            status:"success",
+            result
+         })
     } catch (err) {
-        return err;
+        res.status(404).json({
+            status:"failed",
+            message:err
+           })
     }
 }
 
