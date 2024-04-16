@@ -4,21 +4,7 @@ const {createProduct,getProduct,getProductById,updateProductById,deleteProductBy
 
 router.post('/',createProduct);
 router.get('/',getProduct);
-
-router.get('/:id',async (req,res)=>{
-   try{
-    let result = await getProductById(req.params.id);
-    res.status(200).json({
-       status:"success",
-       result
-    })
-   }catch(err){
-      res.status(404).json({
-       status:"failed",
-       message:err
-      })
-   }
-})
+router.get('/:id',getProductById);
 
 
 router.patch('/:id',async (req,res)=>{

@@ -21,12 +21,18 @@ async function createProduct(req,res) {
 }
 
 
-async function getProductById(id) {
+async function getProductById(req,res) {
     try {
-        let result = await productSchema.findById(id);
-        return result;
+        let result = await productSchema.findById(req.params.id);
+        res.status(200).json({
+            status:"success",
+            result
+         })
     } catch (err) {
-        return err;
+        res.status(404).json({
+            status:"failed",
+            message:err
+           })
     }
 }
 
