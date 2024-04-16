@@ -251,7 +251,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "xyz",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": " {\n           \"name\":\"amol\",\n           \"email\":\"amol@gmail.com\"\n        }",
