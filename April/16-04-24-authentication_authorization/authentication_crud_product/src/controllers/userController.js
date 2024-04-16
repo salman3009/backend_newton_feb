@@ -1,6 +1,6 @@
 const UserSchema = require('../models/userSchema');
 
-async function createUser(req,res) {
+async function registration(req,res) {
     try {
         const user = new UserSchema({
             username: req.body.username,
@@ -63,6 +63,6 @@ async function login(req,res){
 }
 
 module.exports ={
-    createUser,
+    registration,
     login
 }
