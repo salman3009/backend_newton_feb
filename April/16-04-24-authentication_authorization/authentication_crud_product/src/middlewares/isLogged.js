@@ -1,17 +1,18 @@
-
+const jwt = require('jsonwebtoken');
 
 function isLogged(req,res,next){
-    console.log("middleware");
-    console.log(req.headers.authorization);
-    if(req.headers.authorization == "xyz"){
-        next();
+    try{
+      let token = req.headers.authorization;
+      const decodeToken = jwt.verify(token,'newton_school_secret');
+      console.log(decodeToken);
+      next();
+    }catch(err){
+       res.status(401).json({
+         status:"failed",
+         message:"please login again. token failed"
+       })
     }
-    else{
-        res.status(401).json({
-          status:"failed",
-          message:"authentication failed,please provide valid token"
-        })
-    }
+    
    
 }
 module.exports= isLogged;

@@ -254,7 +254,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "xyz",
+								"value": "uyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFrYXNoMyIsImVtYWlsIjoiYWthc2gzQGdtYWlsLmNvbSIsImlhdCI6MTcxMzI4NzAzNSwiZXhwIjoxNzEzMjg3MDk1fQ._u_X2FuYil_WxIRvFagiGqYO8nL7cgiqxxL8JNLF124",
 								"type": "text"
 							}
 						],
