@@ -243,6 +243,45 @@
 						"url": "http://localhost:8080/api/v1/product/661d4d05857cfecc23cfe748"
 					},
 					"response": []
+				},
+				{
+					"name": "get_product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n           \"name\":\"amol\",\n           \"email\":\"amol@gmail.com\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/product"
+					},
+					"response": []
+				},
+				{
+					"name": "registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n           \"username\":\"akash\",\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/v1/user"
+					},
+					"response": []
 				}
 			]
 		},
