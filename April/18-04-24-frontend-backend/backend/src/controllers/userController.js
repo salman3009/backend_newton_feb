@@ -44,7 +44,8 @@ async function login(req,res){
                     message:"email is not found"
                 })
             }
-            if(user && user.password != password){
+            let passwordResult = bcrypt.compareSync(password,user.password);
+            if(user && !passwordResult){
                 return res.status(404).json({
                     status:"failed",
                     message:"password is not match"
