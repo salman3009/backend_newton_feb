@@ -1,7 +1,7 @@
 
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 function Register() {
 
     const [getData, setData] = useState({
@@ -10,6 +10,8 @@ function Register() {
         password:""
     });
 
+    const navigate = useNavigate();
+
     const onChangeHandler=(event)=>{
         setData({...getData,[event.target.name]:event.target.value})
     }
@@ -17,6 +19,13 @@ function Register() {
     const onSubmitHandler=(event)=>{
       event.preventDefault();
       console.log(getData);
+      axios.post('http://localhost:8080/api/v1/user/registration',getData).then((result) => {
+        console.log(result);
+        navigate('/login');
+      }).catch((err) => {
+        console.log(err);
+        alert("server error");
+      })
     }
 
 
