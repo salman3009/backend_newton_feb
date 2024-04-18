@@ -1,12 +1,16 @@
 const UserSchema = require('../models/userSchema');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 async function registration(req,res) {
     try {
+ 
+        const hashedPassword = bcrypt.hashSync(req.body.password,10);
+
         const user = new UserSchema({
             username: req.body.username,
             email: req.body.email,
-            password:req.body.password
+            password:hashedPassword
         })
         let result = await user.save();
         res.status(201).json({
