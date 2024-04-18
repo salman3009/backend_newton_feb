@@ -19,7 +19,6 @@ function Dashboard(){
       setProduct(obj.data.result);
     }).catch((err) => {
       console.log(err);
-      alert("internal server error");
       navigate('/login');
     })
   }
