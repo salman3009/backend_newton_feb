@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
 import Dashboard from './Dashboard';
 import axios from 'axios';
+
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
     obj.headers['Authorization'] = sessionStorage.getItem('token');
     return obj;
   })
+
+  
 
   const logoutHandler=()=>{
     sessionStorage.removeItem('token');
@@ -51,7 +54,7 @@ function App() {
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={logoutHandler}>Logout</button>
+            <Link class="btn btn-outline-success my-2 my-sm-0" to="login" onClick={logoutHandler}>Logout</Link>
           </form>
         </div>
       </nav>
