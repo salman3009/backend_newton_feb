@@ -12,11 +12,11 @@ function Dashboard(){
   }, [])
 
   const initialAPI = () => {
-    axios.get('http://localhost:8080/api/v1/products').then((result) => {
-      console.log(result.data.data.products);
-      setProduct(result.data.data.products);
+    axios.get('http://localhost:8080/api/v1/product').then((result) => {
+      console.log(result);
     }).catch((err) => {
       console.log(err);
+      alert("internal server error");
     })
   }
 
