@@ -82,7 +82,7 @@
 			"response": []
 		},
 		{
-			"name": "delete_product",
+			"name": "delete_blogs",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -99,6 +99,33 @@
 					}
 				},
 				"url": "http://localhost:8080/api/v1/product/6620d8742ddbd28ef4601e80"
+			},
+			"response": []
+		},
+		{
+			"name": "get_blogs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaDEiLCJlbWFpbCI6InN1cmVzaEBnbWFpbC5jb20iLCJpYXQiOjE3MTM2Mjg1MzIsImV4cCI6MTcxMzYzMjEzMn0.GLD8y0wrOrLJnkYVA0E0huLRWFxJtiRefSS7RCQoGM4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n           \"title\":\"Bl2\",\n           \"description\":\"welcome to blogs\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/blogs"
 			},
 			"response": []
 		}
