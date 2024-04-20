@@ -90,10 +90,29 @@ async function deleteBlogsById(req,res) {
 }
 
 
+
+async function updateBlogsComments(req, res) {
+    try {
+        let result = await blogsSchema.findById(req.params.id);
+        result.comments.push(req.body.comments);
+        let updateByComments = await blogsSchema.findByIdAndUpdate(req.params.id, result, { new: true });
+        res.status(200).json({
+            status:"comments updated successfully",
+            updateByComments
+         })
+    } catch (err) {
+        res.status(404).json({
+            status:"failed",
+            message:err
+           })
+    }
+}
+
 module.exports = {
     createBlogs,
     getBlogsById,
     updateBlogsById,
     deleteBlogsById,
-    getBlogs
+    getBlogs,
+    updateBlogsComments
 }
