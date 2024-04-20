@@ -8,6 +8,7 @@ async function createBlogs(req,res) {
             title: req.body.title,
             description: req.body.description,
             user:req.id,
+            comments:req.body.comments?req.body.comments:[],
             created:req.created
         })
         let result = await blogs.save();

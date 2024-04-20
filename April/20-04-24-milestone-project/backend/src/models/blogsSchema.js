@@ -15,6 +15,9 @@ const productSchema = mongoose.Schema({
     },
     created:{
         type:String
+    },
+    comments:{
+        type:Array
     }
 })
 
