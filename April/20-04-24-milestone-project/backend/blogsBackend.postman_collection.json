@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "91579867-fdc3-461b-aa0e-556ab763519a",
+		"name": "blogsBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3112594"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n           \"username\":\"akash\",\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/user/registration"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "created_blogs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n           \"productName\":\"laptop\",\n           \"price\":2000\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/product"
+			},
+			"response": []
+		},
+		{
+			"name": "userInformation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/user/akash@gmail.com"
+			},
+			"response": []
+		},
+		{
+			"name": "delete_product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/product/6620d8742ddbd28ef4601e80"
+			},
+			"response": []
+		}
+	]
+}

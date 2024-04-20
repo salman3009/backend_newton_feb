@@ -1,0 +1,7 @@
+Schema validation:
+1.required 
+2.unique 
+3.enum 
+4.default 
+5.minlength 
+6.maxlength 
