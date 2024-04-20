@@ -52,7 +52,7 @@ async function login(req,res){
                 })
             }
 
-            const token = jwt.sign({username:user.username,email:user.email},"newton_school_secret",{expiresIn:"1h"});
+            const token = jwt.sign({username:user.username,id:user._id},"newton_school_secret",{expiresIn:"1h"});
             res.status(201).json({
                 status:"success",
                 token:token
