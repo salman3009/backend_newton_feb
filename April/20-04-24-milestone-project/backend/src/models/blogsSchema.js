@@ -12,6 +12,9 @@ const productSchema = mongoose.Schema({
     },
     user:{
         type:String
+    },
+    created:{
+        type:String
     }
 })
 

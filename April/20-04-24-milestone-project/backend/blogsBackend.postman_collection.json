@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": " {\n           \"username\":\"akash\",\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+					"raw": " {\n           \"username\":\"suresh\",\n           \"email\":\"suresh@gmail.com\",\n            \"password\":\"12345\"\n        }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -31,7 +31,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": " {\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
+					"raw": " {\n           \"email\":\"suresh@gmail.com\",\n            \"password\":\"12345\"\n        }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -46,17 +46,23 @@
 			"name": "created_blogs",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaCIsImlkIjoiNjYyM2VjMGEzNTljYjAyYTBmYjQ4YjQzIiwiaWF0IjoxNzEzNjMwMjI1LCJleHAiOjE3MTM2MzM4MjV9.QU6joBZ5YQEb5_3p9MXMl9qhXW3xyMnsiQ0zDs2cppc",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": " {\n           \"productName\":\"laptop\",\n           \"price\":2000\n        }",
+					"raw": " {\n           \"title\":\"MAR\",\n           \"description\":\"welcome to nodejs\"\n        }",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "http://localhost:8080/api/v1/product"
+				"url": "http://localhost:8080/api/v1/blogs"
 			},
 			"response": []
 		},
@@ -83,12 +89,15 @@
 		},
 		{
 			"name": "delete_blogs",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtb2wiLCJlbWFpbCI6ImFtb2xAZ21haWwuY29tIiwiaWF0IjoxNzEzNjI5MTQ4LCJleHAiOjE3MTM2MzI3NDh9.Z9KbIw7w32VVjVB2_CIRox8SAFQDl0Z_TA5quMnpX80",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": " {\n           \"email\":\"akash@gmail.com\",\n            \"password\":\"12345\"\n        }",
@@ -98,7 +107,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/api/v1/product/6620d8742ddbd28ef4601e80"
+				"url": "http://localhost:8080/api/v1/blogs/6623e7a8778d35971dede284"
 			},
 			"response": []
 		},
@@ -112,7 +121,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaDEiLCJlbWFpbCI6InN1cmVzaEBnbWFpbC5jb20iLCJpYXQiOjE3MTM2Mjg1MzIsImV4cCI6MTcxMzYzMjEzMn0.GLD8y0wrOrLJnkYVA0E0huLRWFxJtiRefSS7RCQoGM4",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaCIsImlkIjoiNjYyM2VjMGEzNTljYjAyYTBmYjQ4YjQzIiwiaWF0IjoxNzEzNjMwMjI1LCJleHAiOjE3MTM2MzM4MjV9.QU6joBZ5YQEb5_3p9MXMl9qhXW3xyMnsiQ0zDs2cppc",
 						"type": "text"
 					}
 				],

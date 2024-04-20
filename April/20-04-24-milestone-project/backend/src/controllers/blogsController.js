@@ -6,7 +6,9 @@ async function createBlogs(req,res) {
         console.log(req.body);
         const blogs = new blogsSchema({
             title: req.body.title,
-            description: req.body.description
+            description: req.body.description,
+            user:req.id,
+            created:req.created
         })
         let result = await blogs.save();
         res.status(201).json({
