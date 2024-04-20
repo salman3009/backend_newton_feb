@@ -49,7 +49,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaCIsImlkIjoiNjYyM2VjMGEzNTljYjAyYTBmYjQ4YjQzIiwiaWF0IjoxNzEzNjMwMjI1LCJleHAiOjE3MTM2MzM4MjV9.QU6joBZ5YQEb5_3p9MXMl9qhXW3xyMnsiQ0zDs2cppc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaCIsImlkIjoiNjYyM2YxMzkzZTczMWI3ZGNhYzdjZjI1IiwiaWF0IjoxNzEzNjMxNTQ4LCJleHAiOjE3MTM2MzUxNDh9.auQ4W4T7zOFxktqmwTuDfAtt5rCTW9yrvr9Q81l8hOM",
 						"type": "text"
 					}
 				],
@@ -83,7 +83,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/api/v1/user/akash@gmail.com"
+				"url": "http://localhost:8080/api/v1/user/6623f1393e731b7dcac7cf25"
 			},
 			"response": []
 		},
@@ -94,8 +94,9 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFtb2wiLCJlbWFpbCI6ImFtb2xAZ21haWwuY29tIiwiaWF0IjoxNzEzNjI5MTQ4LCJleHAiOjE3MTM2MzI3NDh9.Z9KbIw7w32VVjVB2_CIRox8SAFQDl0Z_TA5quMnpX80",
-						"type": "text"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1cmVzaCIsImlkIjoiNjYyM2YxMzkzZTczMWI3ZGNhYzdjZjI1IiwiaWF0IjoxNzEzNjMxNjY2LCJleHAiOjE3MTM2MzUyNjZ9.6-rQfL7wHB_h-YnxbHYHQTAa_9nWPPL_PR6dpUhKMpE",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
@@ -107,7 +108,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:8080/api/v1/blogs/6623e7a8778d35971dede284"
+				"url": "http://localhost:8080/api/v1/blogs/6623f17b3e731b7dcac7cf2e"
 			},
 			"response": []
 		},

@@ -70,7 +70,24 @@ async function login(req,res){
     }
 }
 
+async function userInformation(req,res) {
+    try {
+        let result = await UserSchema.findById(req.params.id);
+        res.status(200).json({
+            status:"success",
+            result
+         })
+    } catch (err) {
+        res.status(404).json({
+            status:"failed",
+            message:err
+           })
+    }
+}
+
+
 module.exports ={
     registration,
-    login
+    login,
+    userInformation
 }
