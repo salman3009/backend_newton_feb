@@ -4,6 +4,7 @@ const {createBlogs,getBlogs,getBlogsById,updateBlogsById,deleteBlogsById,updateB
 const isLogged = require('../middlewares/isLogged');
 const authorization = require('../middlewares/authorization');
 
+
 router.post('/',isLogged,createBlogs);
 router.get('/',getBlogs);
 router.get('/:id',getBlogsById);
