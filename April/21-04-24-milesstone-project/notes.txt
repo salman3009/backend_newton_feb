@@ -1,0 +1,26 @@
+Folder structure:
+1.create one folder called backend 
+2.npm init 
+3.npm install express dotenv nodemon cors mongoose jsonwebtoken bcyrpt
+4.Two files .env and .gitignore 
+5.src folder 
+       controllers 
+       middlewares 
+       routes 
+       models 
+       app.js 
+       index.js 
+    
+Process for creating CRUD operation 
+   1.schema 
+   2.controllers 
+         create operation
+   3.routes 
+   4.app.js 
+   5.index.js 
+
+local system: http://localhost:3000/api/v1/user/registration
+
+from 2nd api onwards 
+1.controllers 
+2.routes path 
