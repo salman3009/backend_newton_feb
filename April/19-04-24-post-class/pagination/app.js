@@ -26,7 +26,8 @@ async function createOperation(){
 
 async function findOperation(){
       try{
-        //req.params.current
+        //req.params.current = 1
+        //req.params.total  = 20
         let current_page = 1;
         let total_per_page = 5;
         let skip_scenario = (current_page * total_per_page);
