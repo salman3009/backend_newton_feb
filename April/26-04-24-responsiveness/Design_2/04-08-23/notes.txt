@@ -1,0 +1,47 @@
+How to create your own repository?
+//Go to https://github.com/
+//click on New button 
+//repo name:html_basic_table
+//Make public - So everyone I able to open it
+//Add readme file 
+//Create repo 
+//copy https 
+//Inside your system: git clone url 
+//git add .
+//git commit -m "code"
+//git push 
+==============================
+box-sizing:border-box;
+//It will adjust padding within the width and height 
+Any project setup:
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+================================
+Bootstrap:
+//Basic html 
+//Basic css 
+//Predefined css and html content 
+Bootstrap we have 4 and 5 version 
+currently we are using 4 version 
+===========================
+CDN: Content Delivery Network 
+Grid:
+To create row - row 
+To create column - .col|.col-sm-|.col-md-|.col-lg-|.col-xl-
+Bootstrap grid system - It is 2-dimension 
+======================================
+Important Boostrap Topics:
+1.color 
+2.form 
+3.table 
+4.navbar 
+5.container 
+6.grid-system 
+7.alerts 
+8.breadcrumb 
+9.pagination 
+10.modal
+===================

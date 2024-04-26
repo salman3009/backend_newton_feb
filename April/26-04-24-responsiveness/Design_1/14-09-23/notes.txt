@@ -1,0 +1,27 @@
+display property for table:
+//without table tag we can able to create tabular format 
+display:table ---> create table 
+display:table-row ---> similar tr tag 
+display:table-cell --> similar to td tag 
+===============================================
+CSS Units:
+1.px 
+2.%
+3.rem --> 1rem = 16px
+4.em --> 1em = 16px
+5.vw -->1% -- 1% of viewport width 
+6.vh -->1% -- 1% of viewport height 
+=========================================
+flex 
+//It is single-dimension layout
+example:
+display:flex; 
+Few other properties
+1.flex-wrap:wrap
+2.justify-content  :center|space-between|space-evenly
+3.align-content
+4.align-items
+//Inside this we cannot use flex-wrap otherwise it will not work.
+//To arrange content in vertical direction 
+align-items: center|flex-start|flex-end
+===========================================

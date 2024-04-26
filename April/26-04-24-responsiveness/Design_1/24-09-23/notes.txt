@@ -1,0 +1,33 @@
+Bootstrap - 5:
+
+x - left and right 
+y - top and bottom
+s - left 
+t - top
+p - padding
+m - margin 
+gap - gap between column
+w-100 - 100%width
+w-h - 100%height 
+Example:
+px-5 - left and right padding  of 5px
+ms-10 - margin left 10px
+mt-10 - margin top 10px
+
+================================================
+text-center - To align the text in center position.
+justify-content-center - To align entire content
+================================================
+To add flex 
+d-flex 
+flex-row 
+flex-column
+================================================
+To make button large 
+btn-lg 
+===================================
+Grid system:
+col-lg for desktop
+col-md - tablet
+col-sm - for mobile 
+================================
